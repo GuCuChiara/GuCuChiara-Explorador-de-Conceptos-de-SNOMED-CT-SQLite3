@@ -1,19 +1,26 @@
 # GuCuChiara-Explorador-de-Conceptos-de-SNOMED-CT-SQLite3
 Explorador SNOMED-CT Argentina – Streamlit + SQLite3
 
-
+---
 📌 Overview
 
-Aplicación interactiva para exploración semántica de SNOMED-CT Edición Argentina (Snapshot), diseñada para:
+## Aplicación interactiva para exploración semántica de SNOMED-CT Edición Argentina (Snapshot), diseñada para:
 
-Auditoría médica
+* Auditoría médica
+* Curación terminológica
+* Construcción de refsets
+* Exploración jerárquica offline
+* Soporte a interoperabilidad clínica (FHIR / ValueSets)
 
-Curación terminológica
+La solución implementa un pipeline ETL local optimizado, motor de consultas SQL y una interfaz en Streamlit.
 
-Construcción de refsets
+⚙️ Componentes Técnicos
+Capa  Tecnología  Función
+ETL  Pandas  Procesamiento inicial Snapshot
+DB  SQLite3  Persistencia optimizada
+Query Engine  SQL parametrizado  Exploración semántica
+Resolver  Bulk SQL query  Traducción eficiente SCTID→FSN
+UI  Streamlit  Interfaz interactiva
+Export  OpenPyXL + BytesIO  Generación Excel en memoria
 
-Exploración jerárquica offline
 
-Soporte a interoperabilidad clínica (FHIR / ValueSets)
-
-La solución implementa un pipeline ETL local optimizado, motor de consultas SQL y una interfaz profesional en Streamlit con experiencia tipo SaaS.
