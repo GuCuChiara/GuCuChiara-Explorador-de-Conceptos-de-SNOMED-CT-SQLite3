@@ -14,13 +14,17 @@ Explorador SNOMED-CT Argentina – Streamlit + SQLite3
 
 La solución implementa un pipeline ETL local optimizado, motor de consultas SQL y una interfaz en Streamlit.
 
-⚙️ Componentes Técnicos
-Capa  Tecnología  Función
-ETL  Pandas  Procesamiento inicial Snapshot
-DB  SQLite3  Persistencia optimizada
-Query Engine  SQL parametrizado  Exploración semántica
-Resolver  Bulk SQL query  Traducción eficiente SCTID→FSN
-UI  Streamlit  Interfaz interactiva
-Export  OpenPyXL + BytesIO  Generación Excel en memoria
+⚙️ Componentes Técnicos:
+
+| Capa         | Tecnología         | Función                        |
+| ------------ | ------------------ | ------------------------------ |
+| ETL          | Pandas             | Procesamiento inicial Snapshot |
+| DB           | SQLite             | Persistencia optimizada        |
+| Query Engine | SQL parametrizado  | Exploración semántica          |
+| Resolver     | Bulk SQL query     | Traducción eficiente SCTID→FSN |
+| UI           | Streamlit          | Interfaz interactiva           |
+| Export       | OpenPyXL + BytesIO | Generación Excel en memoria    |
+
+
 
 
