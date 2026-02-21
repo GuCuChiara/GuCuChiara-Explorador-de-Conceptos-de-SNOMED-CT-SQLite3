@@ -1,46 +1,41 @@
-# GuCuChiara-Explorador-de-Conceptos-de-SNOMED-CT-SQLite3
 ## Explorador SNOMED-CT Argentina – Streamlit + SQLite3
+### La solución implementa un pipeline ETL local optimizado, motor de consultas SQL y una interfaz en Streamlit.
 
 ---
-## 📌 Aplicación interactiva para exploración semántica de SNOMED-CT Edición Argentina (Snapshot), diseñada para:
 
-
-🧬 Explorador SNOMED-CT Argentina – Streamlit + SQLite
-📌 Descripción General
-
-## Esta aplicación implementa un explorador semántico de SNOMED-CT Argentina Edition (Snapshot) utilizando:
+## Descripción:
+## 📌 Aplicación interactiva para implementar un explorador semántico de SNOMED-CT Edition Snapshot Argentina utilizando:
 * 🐍 Python
 * 🗄 SQLite3 (base optimizada local)
 * 📊 Pandas
 * 🌐 Streamlit (interfaz interactiva)
+* ⚙️ Archivos RF2 de Descripciones y Relaciones (Snapshot_ArgentinaEdition_20251120).
 
-## El sistema permite buscar conceptos por FSN en español, visualizar:
+---
+
+## El sistema permite buscar conceptos por FSN en español y visualizar:
 * Relaciones jerárquicas (Is-A / Ancestros)
 * Relaciones de atributos
 * Descendientes inferidos
 * Exportación dinámica de subconjuntos (Refsets) a Excel
 
-## La solución está pensada como herramienta de apoyo para:
-* Auditoría médica
-* Curación terminológica
-* Construcción de refsets
+---
 
-## Exploración semántica local sin servidor Snowstorm
-* Exploración terminológica.
-* Construcción de refsets.
-* Exploración jerárquica offline.
+## La solución está pensada como herramienta de exploración semántica local sin servidor Snowstorm, para el apoyo de:
+* Exploración y aprendizaje sobre la Ontología
+* Navegación jerárquica offline
+* Construcción de Refsets
 * Soporte a interoperabilidad clínica (FHIR / ValueSets).
-
-### La solución implementa un pipeline ETL local optimizado, motor de consultas SQL y una interfaz en Streamlit.
 
 ---
 ## 🖥️ Arquitectura de Despliegue (Local / Portable):
 * 100% local
 * No requiere:
-* Snowstorm
-* Elasticsearch
-* Servidor externo
+   * Snowstorm
+   * Elasticsearch
+   * Servidor externo
 * **Portable** (puede ejecutarse en cualquier entorno Python compatible)
+
 ---
 
 ## ⚙️ Componentes Técnicos:
@@ -56,7 +51,16 @@
 
 ---
 ## Estructura del Proyecto:
-<img width="307" height="148" alt="image" src="https://github.com/user-attachments/assets/4ecf2ef9-6381-4028-8deb-8de876c9de3b" />
+
+```
+├── Buscador_SNOMED-CT_5_Sqlite3.py
+├── snomed_argentina.db (auto-generado)
+├── README.md
+└── Snapshot/
+    ├── sct2_Description_Snapshot_ArgentinaEdition_20251120.txt
+    └── sct2_Relationship_Snapshot_ArgentinaEdition_20251120.txt
+
+```
 
 ---
 
