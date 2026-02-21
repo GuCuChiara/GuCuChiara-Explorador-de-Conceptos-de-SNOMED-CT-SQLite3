@@ -2,6 +2,10 @@
 ### La solución implementa un pipeline ETL local optimizado, motor de consultas SQL y una interfaz en Streamlit.
 
 ---
+<img width="1251" height="922" alt="image" src="https://github.com/user-attachments/assets/946cabca-8f2b-4b20-b262-717993a6c32e" />
+
+
+---
 
 ## Descripción:
 ## 📌 Aplicación interactiva para implementar un explorador semántico de SNOMED-CT Edition Snapshot Argentina utilizando:
