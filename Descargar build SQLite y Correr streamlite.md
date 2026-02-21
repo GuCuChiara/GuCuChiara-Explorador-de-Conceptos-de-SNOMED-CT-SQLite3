@@ -23,6 +23,7 @@ SnomedCT_Argentina-EditionRelease_PRODUCTION_20251120T120000Z
 ---
 ## Si no disponen de los archivos RF2, en este link  de Google Drive se puede descargar una build realizada con la base de datos con SQLite de prueba:
 ``` 
-
+https://drive.google.com/file/d/1k6_RLpEYoeY9EK0XqMzmj702rS9ZRVeD/view?usp=drive_link
 
 ``` 
+
